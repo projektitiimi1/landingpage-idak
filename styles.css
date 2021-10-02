@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+
+  body {
+      background-color: rgb(179, 206, 179);
+      font-family: sans-serif;
+      
+  }
+
+  header {
+      background-image: url("images/michal-parzuchowski-ItaV89TNkks-unsplash\ \(1\).jpg");
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      object-fit: cover;
+      min-height:100vh ;
+      font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  }
+
+  /* Navigation */
+
+  nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+  }
+
+  nav li {
+      display: inline-block;
+  }
+
+  nav a {
+      text-decoration: none;
+     color:white;
+     display: block;
+     text-transform: uppercase;
+     text-align: center;
+     padding: 40px 20px;
+     letter-spacing: 0.15em;
+     position: relative;
+  
+  }
+
+  /* hover */
+  
+
+  li a::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: white;
+      transition: widtg 0.25s ease-out;
+  }
+
+  li a:hover::before {
+      width: 100%;
+  }
+
+  .logo {
+      padding-top:95px ;
+  }
+
+  main {
+      text-align: center;
+      color: black;
+      display: block;
+  }
+
+  .info {
+      padding-top: 13%;
+      font-size: 45px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .text-box {
+      max-width: 800px;
+      margin: auto;
+      padding-top:40px;
+      
+  }
+
+  .text-box p {
+      line-height: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+  }
+
+  .products {
+    padding-top: 13%;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+  }
+
+  .image-container {
+    margin-top:5rem ;
+    display: flex;
+   justify-content: space-around;
+   
+}
+
+.image1,.image2,.image3 {
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3); 
+}
+
+.image1 {
+    background-image: url("images/christina-rumpf-LMzwJDu6hTE-unsplash.jpg");
+    background-size: cover;
+      background-position: center;
+      object-fit: cover;
+   
+}
+
+.image2 {
+    background-image: url("images/henry-be-WrR5lhKBmHc-unsplash.jpg");
+    background-size: cover;
+      background-position: center;
+      object-fit: cover;
+      
+}
+
+.image3 {
+    background-image: url("images/dilyara-garifullina-Dh0ebazhbtY-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+     
+}
+
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.textyey a {
+    text-decoration: none;
+    color:black;
+}
+
+
+.h2-stores { 
+padding-top: 8%;
+font-size: 45px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-container {
+    margin-top:5rem ;
+    display: flex;
+   justify-content: space-around;
+    margin-bottom: 120px;
+
+}
+
+
+.box-1,.box-2,.box-3{
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    background-color: whitesmoke;
+    position: relative;
+    
+}
+
+.box-1 p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    top: 30%;
+    position: relative;
+    font-size: 25px;
+}
+
+.box-2 p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    top: 30%;
+    position: relative;
+    font-size: 25px;
+}
+
+ .box-3 p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    top: 30%;
+    position: relative;
+    font-size: 25px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 310px;
+    display: flex;
+   justify-content: space-around;
+    
+}
+
+.left, .social, .right {
+    display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.left ul {
+    text-align: center;
+    list-style: none;
+    line-height: 35px;
+}
+
+.left ul a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.left a:hover {
+    color: rgb(179,206,179);
+}
+
+.social a{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color:rgb(179, 206, 179);
+    align-items: center;
+    border: 2px solid rgb(179, 206, 179);
+    margin: 20px 50px;
+    border-radius: 50%;
+   text-align: center;
+}
+
+.social{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+    
+}
+
+.social a:hover {
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+}
+
+.right {
+    color:white;
+}
+
+.right ul {
+   text-align: center;
+    list-style: none;
+    line-height: 35px;
+    
+}
